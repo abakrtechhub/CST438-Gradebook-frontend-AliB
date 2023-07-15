@@ -109,7 +109,7 @@ class Gradebook extends React.Component {
     handleCellEditCommit = (e) => {
       console.log("handleCellEditCommit "+JSON.stringify(e));
       const newgrades= this.state.grades.map(r => {
-        //console.log(r.id+"   "+e.id);
+        console.log(r.id+"   "+e.id);
         if (r.id === e.id) {
           return {...r, [e.field]:e.value};
         } else {
